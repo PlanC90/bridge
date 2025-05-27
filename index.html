@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MEMEX Bridge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Language Selection -->
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+      <label for="language" style="margin-right: 0.5rem;">Language</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="hi">Hindi</option>
+        <option value="bn">Bengali</option>
+        <option value="ar">Arabic</option>
+        <option value="pt">Portuguese</option>
+        <option value="ru">Russian</option>
+        <option value="ja">Japanese</option>
+        <option value="pa">Punjabi</option>
+        <option value="de">German</option>
+      </select>
+    </div>
+
+    <h1 id="title">🌉 MEMEX Bridge Form</h1>
+
+    <form id="bridgeForm">
+      <label id="fromNetworkLabel" for="fromNetwork">From Network</label>
+      <select id="fromNetwork" name="fromNetwork" required>
+        <option value="XEP">XEP</option>
+        <option value="SHIBARIUM">SHIBARIUM</option>
+      </select>
+
+      <label id="toNetworkLabel" for="toNetwork">To Network</label>
+      <select id="toNetwork" name="toNetwork" required>
+        <option value="XEP">XEP</option>
+        <option value="SHIBARIUM">SHIBARIUM</option>
+      </select>
+
+      <label id="walletFromLabel" for="walletFrom">Your Wallet Address (From)</label>
+      <input type="text" id="walletFrom" name="walletFrom" required />
+
+      <label id="walletToLabel" for="walletTo">Your Wallet Address (To)</label>
+      <input type="text" id="walletTo" name="walletTo" required />
+
+      <label id="txidFromLabel" for="txidFrom">TX ID (From)</label>
+      <input type="text" id="txidFrom" name="txidFrom" required />
+
+      <label id="gasFeeLabel" for="gasFee">Gas Fee (BONE)</label>
+      <span id="gasFee">0.001</span>
+      <div class="gas-fee-info">
+        Send gas to: <strong id="gasAddress">0x28Cd7B477f4601dB0aBe289FF7B17EB5D1062C87</strong>
+        <button type="button" id="copyGasAddress" class="copy">Copy</button>
+      </div>
+
+      <label id="transactionHashLabel" for="transactionHash">Gas Transaction Hash</label>
+      <input type="text" id="transactionHash" name="transactionHash" />
+
+      <div class="note">
+        <span id="note"></span>
+        <strong id="bridgeAddress">xUvEMAqbXsf6xAbH6TimiKbzfDTGTCsH3i</strong>
+        <button type="button" id="copyAddress" class="copy">📋 Copy</button>
+        <div style="text-align: center;">
+          <img id="qrCode" src="https://api.qrserver.com/v1/create-qr-code/?data=xUvEMAqbXsf6xAbH6TimiKbzfDTGTCsH3i&size=100x100" alt="QR Code" />
+        </div>
+        <p id="warning" class="warning">⚠️ Transactions without sufficient gas will be burned.</p>
+      </div>
+
+      <p id="info" class="info">
+        ⏳ Transfers may take up to 24 hours to complete. We appreciate your patience.
+      </p>
+
+      <button id="submitButton" type="submit" class="submit">Submit</button>
+    </form>
+
+    <div id="summaryBox" class="hidden">
+      <h3>✅ Bridge Summary</h3>
+      <ul id="summaryList"></ul>
+      <p class="info">
+        ⏳ Transfers may take up to 24 hours to complete. We appreciate your patience.
+      </p>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

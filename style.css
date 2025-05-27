@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+button.submit {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button.submit:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button.copy {
+  background-color: #2196F3; /* Blue */
+  color: white;
+}
+
+button.copy:hover {
+  background-color: #1976D2; /* Darker blue on hover */
+}
+
+
+.note {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-left: 5px solid #4caf50;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.warning {
+  color: #e53935;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
