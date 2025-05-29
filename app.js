@@ -15,7 +15,8 @@ const translations = {
     info: "⏳ Transfers may take up to 24 hours to complete. We appreciate your patience.",
     submitButton: "Submit",
     invalidShibariumAddress: 'Shibarium Wallet Address must start with "0x".',
-    invalidXEPAddress: 'XEP Wallet Address must start with "x".'
+    invalidXEPAddress: 'XEP Wallet Address must start with "x".',
+    gasFeeValue: "0.050"
   },
   tr: {
     title: "🌉 MEMEX Köprü Formu",
@@ -33,7 +34,8 @@ const translations = {
     info: "⏳ Transferlerin tamamlanması 24 saate kadar sürebilir. Sabrınız için teşekkür ederiz.",
     submitButton: "Gönder",
     invalidShibariumAddress: 'Shibarium Cüzdan Adresi "0x" ile başlamalıdır.',
-    invalidXEPAddress: 'XEP Cüzdan Adresi "x" ile başlamalıdır.'
+    invalidXEPAddress: 'XEP Cüzdan Adresi "x" ile başlamalıdır.',
+    gasFeeValue: "0.050"
   },
   es: {
     title: "🌉 Formulario de Puente MEMEX",
@@ -51,7 +53,8 @@ const translations = {
     info: "⏳ Las transferencias pueden tardar hasta 24 horas en completarse. Agradecemos su paciencia.",
     submitButton: "Enviar",
     invalidShibariumAddress: 'La Dirección de Monedero de Shibarium debe comenzar con "0x".',
-    invalidXEPAddress: 'La Dirección de Monedero de XEP debe comenzar con "x".'
+    invalidXEPAddress: 'La Dirección de Monedero de XEP debe comenzar con "x".',
+    gasFeeValue: "0.050"
   },
   hi: {
     title: "🌉 MEMEX ब्रिज फॉर्म",
@@ -69,7 +72,8 @@ const translations = {
     info: "⏳ स्थानान्तरण पूर्ण होने में 24 घंटे तक का समय लग सकता है। हम आपके धैर्य के लिए आभारी हैं।",
     submitButton: "सबमिट करें",
     invalidShibariumAddress: 'Shibarium वॉलेट पता "0x" से शुरू होना चाहिए।',
-    invalidXEPAddress: 'XEP वॉलेट पता "x" से शुरू होना चाहिए।'
+    invalidXEPAddress: 'XEP वॉलेट पता "x" से शुरू होना चाहिए।',
+    gasFeeValue: "0.050"
   },
   bn: {
     title: "🌉 MEMEX ব্রিজ ফর্ম",
@@ -87,7 +91,8 @@ const translations = {
     info: "⏳ ট্রান্সফার সম্পূর্ণ হতে ২৪ ঘন্টা পর্যন্ত সময় লাগতে পারে। আপনার ধৈর্যের জন্য আমরা কৃতজ্ঞ।",
     submitButton: "জমা দিন",
     invalidShibariumAddress: 'Shibarium ওয়ালেট ঠিকানা "0x" দিয়ে শুরু হওয়া উচিত।',
-    invalidXEPAddress: 'XEP ওয়ালেট ঠিকানা "x" দিয়ে শুরু হওয়া উচিত।'
+    invalidXEPAddress: 'XEP ওয়ালেট ঠিকানা "x" দিয়ে শুরু হওয়া উচিত।',
+    gasFeeValue: "0.050"
   },
   ar: {
     title: "🌉 نموذج جسر MEMEX",
@@ -105,7 +110,8 @@ const translations = {
     info: "⏳ قد تستغرق عمليات النقل ما يصل إلى 24 ساعة لإكمالها. نشكر لكم صبركم.",
     submitButton: "إرسال",
     invalidShibariumAddress: 'يجب أن يبدأ عنوان محفظة شيباريوم بـ "0x".',
-    invalidXEPAddress: 'يجب أن يبدأ عنوان محفظة XEP بـ "x".'
+    invalidXEPAddress: 'يجب أن يبدأ عنوان محفظة XEP بـ "x".',
+    gasFeeValue: "0.050"
   },
   pt: {
     title: "🌉 Formulário da Ponte MEMEX",
@@ -123,7 +129,8 @@ const translations = {
     info: "⏳ As transferências podem levar até 24 horas para serem concluídas. Agradecemos sua paciência.",
     submitButton: "Enviar",
     invalidShibariumAddress: 'O Endereço da Carteira Shibarium deve começar com "0x".',
-    invalidXEPAddress: 'O Endereço da Carteira XEP deve começar com "x".'
+    invalidXEPAddress: 'O Endereço da Carteira XEP deve começar com "x".',
+    gasFeeValue: "0.050"
   },
   ru: {
     title: "🌉 Форма моста MEMEX",
@@ -141,7 +148,8 @@ const translations = {
     info: "⏳ Переводы могут занять до 24 часов. Благодарим за ваше терпение.",
     submitButton: "Отправить",
     invalidShibariumAddress: 'Адрес кошелька Shibarium должен начинаться с «0x».',
-    invalidXEPAddress: 'Адрес кошелька XEP должен начинаться с «x».'
+    invalidXEPAddress: 'Адрес кошелька XEP должен начинаться с «x».',
+    gasFeeValue: "0.050"
   },
   ja: {
     title: "🌉 MEMEXブリッジフォーム",
@@ -159,7 +167,8 @@ const translations = {
     info: "⏳ 転送には最大24時間かかる場合があります。ご理解のほどよろしくお願いいたします。",
     submitButton: "送信",
     invalidShibariumAddress: 'Shibariumウォレットアドレスは「0x」で始まる必要があります。',
-    invalidXEPAddress: 'XEPウォレットアドレスは「x」で始まる必要があります。'
+    invalidXEPAddress: 'XEPウォレットアドレスは「x」で始まる必要があります。',
+    gasFeeValue: "0.050"
   },
   pa: {
     title: "🌉 MEMEX ਬ੍ਰਿਜ ਫਾਰਮ",
@@ -177,7 +186,8 @@ const translations = {
     info: "⏳ ਟ੍ਰਾਂਸਫ਼ਰ ਪੂਰਾ ਹੋਣ ਵਿੱਚ 24 ਘੰਟੇ ਤੱਕ ਦਾ ਸਮਾਂ ਲੱਗ ਸਕਦਾ ਹੈ। ਤੁਹਾਡੇ ਸਬਰ ਲਈ ਧੰਨਵਾਦ।",
     submitButton: "ਸਬਮਿਟ ਕਰੋ",
     invalidShibariumAddress: 'Shibarium ਵਾਲਿਟ ਐਡਰੈੱਸ "0x" ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।',
-    invalidXEPAddress: 'XEP ਵਾਲਿਟ ਐਡਰੈੱਸ "x" ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।'
+    invalidXEPAddress: 'XEP ਵਾਲਿਟ ਐਡਰੈੱਸ "x" ਨਾਲ ਸ਼ੁਰੂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।',
+    gasFeeValue: "0.050"
   },
   de: {
     title: "🌉 MEMEX-Brückenformular",
@@ -195,7 +205,8 @@ const translations = {
     info: "⏳ Überweisungen können bis zu 24 Stunden dauern. Vielen Dank für Ihre Geduld.",
     submitButton: "Senden",
     invalidShibariumAddress: 'Die Shibarium Wallet-Adresse muss mit "0x" beginnen.',
-    invalidXEPAddress: 'Die XEP Wallet-Adresse muss mit "x" beginnen.'
+    invalidXEPAddress: 'Die XEP Wallet-Adresse muss mit "x" beginnen.',
+    gasFeeValue: "0.050"
   }
 };
 
@@ -215,6 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const txidFromLabel = document.getElementById('txidFromLabel');
   const walletFromInput = document.getElementById('walletFrom');
   const walletToInput = document.getElementById('walletTo');
+  const gasFeeLabelElement = document.getElementById('gasFeeLabel');
 
   const updateAddress = () => {
     if (fromNetwork.value === 'SHIBARIUM') {
@@ -244,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('toNetworkLabel').textContent = trans.toNetworkLabel;
     document.getElementById('amountLabel').textContent = trans.amountLabel;
     document.getElementById('gasFeeLabel').textContent = trans.gasFeeLabel;
+    gasFeeLabelElement.textContent = `${trans.gasFeeLabel} (${trans.gasFeeValue})`;
     document.getElementById('transactionHashLabel').textContent = trans.transactionHashLabel;
 
     if (fromNetwork.value === 'XEP') {
