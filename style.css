@@ -1,88 +1,109 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #f6f8ff 0%, #e9f0ff 100%);
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
+  width: 100%;
   max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 form label {
   display: block;
-  margin-top: 15px;
-  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
 }
 
 input, select {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 2px solid #e1e8f5;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 button {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 12px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
   border: none;
 }
 
 button.submit {
-  background-color: #4CAF50; /* Green */
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: white;
 }
 
 button.submit:hover {
-  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 button.copy {
-  background-color: #2196F3; /* Blue */
-  color: white;
+  background: #e1e8f5;
+  color: #2c3e50;
 }
 
 button.copy:hover {
-  background-color: #1976D2; /* Darker blue on hover */
+  background: #d1dff0;
 }
 
-
 .note {
-  background-color: #e8f5e9;
-  padding: 15px;
-  border-left: 5px solid #4caf50;
-  margin: 20px 0;
-  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  border: 2px solid rgba(59, 130, 246, 0.2);
 }
 
 .warning {
-  color: #e53935;
+  color: #dc2626;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 1rem;
+  font-weight: 500;
 }
 
 .info {
   font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
+  color: #64748b;
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .hidden {
@@ -90,6 +111,46 @@ button.copy:hover {
 }
 
 .error {
-  color: red;
+  color: #dc2626;
   font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.gas-fee-info {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#summaryBox {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+#summaryList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#summaryList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e1e8f5;
+}
+
+#summaryList li:last-child {
+  border-bottom: none;
+}
+
+#language {
+  background: white;
+  border: 2px solid #e1e8f5;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #2c3e50;
 }

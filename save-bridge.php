@@ -1,9 +1,22 @@
 <?php
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *'); // Allow cross-origin requests
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    exit; // OPTIONS request exits here
+}
 
 // Formdan gelen verileri al ve güvenli hale getir
 function clean($key) {
   return htmlspecialchars(trim($_POST[$key] ?? ''), ENT_QUOTES, 'UTF-8');
+}
+
+// Check if the request method is POST
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  echo json_encode(['success' => false, 'message' => 'Invalid request method']);
+  exit;
 }
 
 $fromNetwork = clean('fromNetwork');
@@ -59,7 +72,10 @@ if (file_exists($dataFile)) {
 
 $all[] = $summary;
 
-file_put_contents($dataFile, json_encode($all, JSON_PRETTY_PRINT));
+if (file_put_contents($dataFile, json_encode($all, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)) === false) {
+    echo json_encode(['success' => false, 'message' => 'Failed to write to data file']);
+    exit;
+}
 
 // Başarılı dönüş
 echo json_encode([
